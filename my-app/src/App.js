@@ -4,15 +4,16 @@ import './App.css';
 import Navbar from './componenets/Navbar';
 import TextForm from './componenets/TextForm';
 import Alert from './componenets/Alert';
-import About from './componenets/About';
+// import About from './componenets/About';
 
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  // Link
-} from "react-router-dom";
+//router is to open pages withought loading u can use it for that
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   // Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -72,20 +73,20 @@ setAlert(null)
     <>
  
 {/* <Navbar title= "textUtilities" data ="abouttextutilities" />  */}
-<Router>
+{/* <Router> */}
   <Navbar title= "textUtilities" mode={mode}  toggleMode={toggleMode} /> 
    <Alert alert={alert}     />
       
      <div className="container my-4">
-
-      <Routes>
+     <TextForm  heading="Enter the text to analyze"  mode={mode}  showAlert={showAlert} />
+      {/* <Routes>
           <Route exact path="/about"  element= {<About />}>      </Route>
     
           <Route exact path="/textform"       element= { <TextForm  heading="Enter the text to analyze"  mode={mode}  showAlert={showAlert} />}   >   </Route>
-     
-      </Routes>
+      */}
+      {/* </Routes> */}
  </div>
-      </Router>
+      {/* </Router> */}
    </>
           // if u didnot pass values then default props can use 
           //  exact to show after click exact one not different because when u not use this react  show different som etime 
