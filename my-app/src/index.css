@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.accordion-flush .accordion-item .accordion-button {
+  border: 2px solid #e3e1e1;
+}
